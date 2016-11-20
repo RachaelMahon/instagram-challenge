@@ -1,0 +1,6 @@
+.text-center
+  = image_tag @post.image.url(:medium)
+.form-wrapper
+= simple_form_for @post do |f|
+  = f.input :caption
+  = f.button :submit
